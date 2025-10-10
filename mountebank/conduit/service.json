@@ -1,0 +1,52 @@
+{
+  "port": 8081,
+  "protocol": "http",
+  "name": "Conduit stubs",
+  "mode": "text",
+  "stubs": [
+    {
+      "predicates": [
+        {
+          "equals": {
+            "method": "GET",
+            "path": "/api/tags"
+          }
+        }
+      ],
+      "responses": [
+        {
+          "is": {
+            "headers": {
+              "content-type": "application/json",
+              "access-control-allow-origin": "*"
+            },
+            "statusCode": 200,
+            "body": "<%- stringify(filename, './conduit/tags.json') %>"
+          }
+        }
+      ]
+    },
+    {
+      "predicates": [
+        {
+          "contains": {
+            "method": "GET",
+            "path": "/api/articles"
+          }
+        }
+      ],
+      "responses": [
+        {
+          "is": {
+            "headers": {
+              "content-type": "application/json",
+              "access-control-allow-origin": "*"
+            },
+            "statusCode": 200,
+            "body": "<%- stringify(filename, './conduit/articles.json') %>"
+          }
+        }
+      ]
+    }
+  ]
+}

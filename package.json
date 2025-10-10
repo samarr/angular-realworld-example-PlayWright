@@ -5,10 +5,15 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "mockstart": "ng serve --configuration=mock",
     "build": "ng build",
+    "build:mock": "ng build --configuration=mock",
+    "build:prod": "ng build --configuration=production",
     "test": "ng test",
     "lint": "ng lint --force",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "mock-server": "mb --configfile mountebank/imposters.ejs",
+    "mock-server:debug": "mb --configfile mountebank/imposters.ejs --loglevel debug"
   },
   "engines": {
     "node": "^20.11.1"
@@ -37,6 +42,7 @@
     "@types/marked": "^6.0.0",
     "husky": "^8.0.3",
     "lint-staged": "^16.1.2",
+    "mountebank": "^2.9.1",
     "prettier": "^3.1.1",
     "typescript": "~5.8.3"
   },

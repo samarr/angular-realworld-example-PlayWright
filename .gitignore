@@ -43,3 +43,7 @@ yarn-error.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# Mountebank logs and process files
+mb*
+mountebank/mb*

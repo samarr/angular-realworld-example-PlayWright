@@ -1,0 +1,39 @@
+{
+  "articles": [
+    {
+      "title": "dummy-1",
+      "slug": "dummy-1",
+      "body": "dummy-1",
+      "createdAt": "2019-09-02T09:12:45.536Z",
+      "updatedAt": "2019-09-02T09:12:45.536Z",
+      "tagList": ["test", "test"],
+      "description": "dummy-1",
+      "author": {
+        "username": "dummy-1",
+        "bio": null,
+        "image": "https://www.imagesdoc.com/wp-content/uploads/sites/33/2018/10/Fotolia_53407720_Subscription_XL.jpg",
+        "following": false
+      },
+      "favorited": false,
+      "favoritesCount": 0
+    },
+    {
+      "title": "dummy-2",
+      "slug": "dummy-2",
+      "body": "dummy-2",
+      "createdAt": "2019-09-02T05:20:08.545Z",
+      "updatedAt": "2019-09-02T05:20:08.545Z",
+      "tagList": [],
+      "description": "dummy-2",
+      "author": {
+        "username": "dummy-2",
+        "bio": null,
+        "image": "https://static.productionready.io/images/smiley-cyrus.jpg",
+        "following": false
+      },
+      "favorited": false,
+      "favoritesCount": 2
+    }
+  ],
+  "articlesCount": 10
+}
