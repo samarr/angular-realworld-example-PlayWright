@@ -13,7 +13,10 @@
     "lint": "ng lint --force",
     "prepare": "husky install",
     "mock-server": "mb --configfile mountebank/imposters.ejs",
-    "mock-server:debug": "mb --configfile mountebank/imposters.ejs --loglevel debug"
+    "mock-server:debug": "mb --configfile mountebank/imposters.ejs --loglevel debug",
+    "test:e2e": "npx playwright test",
+    "test:functional-chromium": "npx playwright test e2e/tests/functional/ --project=chromium --headed",
+    "test:business": "npx playwright test e2e/tests/business/"
   },
   "engines": {
     "node": "^20.11.1"
@@ -39,7 +42,9 @@
     "@angular/build": "^20.0.0",
     "@angular/cli": "^20.0.0",
     "@angular/compiler-cli": "20.0.0",
+    "@playwright/test": "^1.56.1",
     "@types/marked": "^6.0.0",
+    "@types/node": "^24.9.1",
     "husky": "^8.0.3",
     "lint-staged": "^16.1.2",
     "mountebank": "^2.9.1",

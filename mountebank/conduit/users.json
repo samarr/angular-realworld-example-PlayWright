@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "email": "test@example.com",
+      "username": "testuser",
+      "bio": "Test user bio",
+      "image": "https://api.realworld.io/images/demo-avatar.png",
+      "token": "jwt.test.token"
+    }
+  ],
+  "errors": {
+    "invalid_login": {
+      "errors": {
+        "email or password": ["is invalid"]
+      }
+    },
+    "validation": {
+      "errors": {
+        "username": ["can't be blank"],
+        "email": ["must be a valid email"],
+        "password": ["must be at least 8 characters"]
+      }
+    }
+  }
+}

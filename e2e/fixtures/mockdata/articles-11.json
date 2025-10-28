@@ -1,0 +1,192 @@
+{
+  "articles": [
+    {
+      "slug": "article-1",
+      "title": "Article 1",
+      "description": "desc 1",
+      "body": "body 1",
+      "tagList": ["tag1"],
+      "createdAt": "2025-10-01T00:00:00.000Z",
+      "updatedAt": "2025-10-01T00:00:00.000Z",
+      "favoritesCount": 0,
+      "favorited": false,
+      "author": {
+        "username": "author1",
+        "bio": null,
+        "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+        "following": false
+      }
+    },
+    {
+      "slug": "article-2",
+      "title": "Article 2",
+      "description": "desc 2",
+      "body": "body 2",
+      "tagList": ["tag2"],
+      "createdAt": "2025-10-01T01:00:00.000Z",
+      "updatedAt": "2025-10-01T01:00:00.000Z",
+      "favoritesCount": 0,
+      "favorited": false,
+      "author": {
+        "username": "author2",
+        "bio": null,
+        "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+        "following": false
+      }
+    },
+    {
+      "slug": "article-3",
+      "title": "Article 3",
+      "description": "desc 3",
+      "body": "body 3",
+      "tagList": ["tag3"],
+      "createdAt": "2025-10-01T02:00:00.000Z",
+      "updatedAt": "2025-10-01T02:00:00.000Z",
+      "favoritesCount": 0,
+      "favorited": false,
+      "author": {
+        "username": "author3",
+        "bio": null,
+        "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+        "following": false
+      }
+    },
+    {
+      "slug": "article-4",
+      "title": "Article 4",
+      "description": "desc 4",
+      "body": "body 4",
+      "tagList": ["tag1"],
+      "createdAt": "2025-10-01T03:00:00.000Z",
+      "updatedAt": "2025-10-01T03:00:00.000Z",
+      "favoritesCount": 0,
+      "favorited": false,
+      "author": {
+        "username": "author4",
+        "bio": null,
+        "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+        "following": false
+      }
+    },
+    {
+      "slug": "article-5",
+      "title": "Article 5",
+      "description": "desc 5",
+      "body": "body 5",
+      "tagList": ["tag2"],
+      "createdAt": "2025-10-01T04:00:00.000Z",
+      "updatedAt": "2025-10-01T04:00:00.000Z",
+      "favoritesCount": 0,
+      "favorited": false,
+      "author": {
+        "username": "author5",
+        "bio": null,
+        "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+        "following": false
+      }
+    },
+    {
+      "slug": "article-6",
+      "title": "Article 6",
+      "description": "desc 6",
+      "body": "body 6",
+      "tagList": ["tag3"],
+      "createdAt": "2025-10-01T05:00:00.000Z",
+      "updatedAt": "2025-10-01T05:00:00.000Z",
+      "favoritesCount": 0,
+      "favorited": false,
+      "author": {
+        "username": "author6",
+        "bio": null,
+        "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+        "following": false
+      }
+    },
+    {
+      "slug": "article-7",
+      "title": "Article 7",
+      "description": "desc 7",
+      "body": "body 7",
+      "tagList": ["tag1"],
+      "createdAt": "2025-10-01T06:00:00.000Z",
+      "updatedAt": "2025-10-01T06:00:00.000Z",
+      "favoritesCount": 0,
+      "favorited": false,
+      "author": {
+        "username": "author7",
+        "bio": null,
+        "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+        "following": false
+      }
+    },
+    {
+      "slug": "article-8",
+      "title": "Article 8",
+      "description": "desc 8",
+      "body": "body 8",
+      "tagList": ["tag2"],
+      "createdAt": "2025-10-01T07:00:00.000Z",
+      "updatedAt": "2025-10-01T07:00:00.000Z",
+      "favoritesCount": 0,
+      "favorited": false,
+      "author": {
+        "username": "author8",
+        "bio": null,
+        "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+        "following": false
+      }
+    },
+    {
+      "slug": "article-9",
+      "title": "Article 9",
+      "description": "desc 9",
+      "body": "body 9",
+      "tagList": ["tag3"],
+      "createdAt": "2025-10-01T08:00:00.000Z",
+      "updatedAt": "2025-10-01T08:00:00.000Z",
+      "favoritesCount": 0,
+      "favorited": false,
+      "author": {
+        "username": "author9",
+        "bio": null,
+        "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+        "following": false
+      }
+    },
+    {
+      "slug": "article-10",
+      "title": "Article 10",
+      "description": "desc 10",
+      "body": "body 10",
+      "tagList": ["tag1"],
+      "createdAt": "2025-10-01T09:00:00.000Z",
+      "updatedAt": "2025-10-01T09:00:00.000Z",
+      "favoritesCount": 0,
+      "favorited": false,
+      "author": {
+        "username": "author10",
+        "bio": null,
+        "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+        "following": false
+      }
+    },
+    {
+      "slug": "article-11",
+      "title": "Article 11",
+      "description": "desc 11",
+      "body": "body 11",
+      "tagList": ["tag2"],
+      "createdAt": "2025-10-01T10:00:00.000Z",
+      "updatedAt": "2025-10-01T10:00:00.000Z",
+      "favoritesCount": 0,
+      "favorited": false,
+      "author": {
+        "username": "author11",
+        "bio": null,
+        "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+        "following": false
+      }
+    }
+  ],
+  "articlesCount": 11
+}

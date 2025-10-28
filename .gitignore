@@ -47,3 +47,12 @@ Thumbs.db
 # Mountebank logs and process files
 mb*
 mountebank/mb*
+
+# Ignore chatmodes folder
+.github/chatmodes/
+
+e2e/tests/seed.spec.ts
+e2e/tests/test-plan.md
+e2e/seed.spec.ts
+
+playwright-report/*.*

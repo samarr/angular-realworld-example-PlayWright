@@ -1,0 +1,16 @@
+{
+  "comments": [
+    {
+      "id": 1,
+      "createdAt": "2025-10-23T10:00:00.000Z",
+      "updatedAt": "2025-10-23T10:00:00.000Z",
+      "body": "Test comment 1",
+      "author": {
+        "username": "testuser",
+        "bio": "Test user bio",
+        "image": "https://api.realworld.io/images/demo-avatar.png",
+        "following": false
+      }
+    }
+  ]
+}
