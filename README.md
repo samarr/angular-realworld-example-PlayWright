@@ -61,4 +61,74 @@ The example application is a social blogging site (i.e. a Medium.com clone) call
 
 <br />
 
+## End-to-End Testing with Playwright
+
+### Overview
+
+We are using **Playwright** for end-to-end testing. The tests are organized into functional and business categories:
+
+- **Functional Tests**: Run on localhost with mocked or stubbed data.
+- **Business Tests**: Run in a real environment with live data.
+
+---
+
+### How to Start the Mock Server
+
+The mock server is powered by **Mountebank**. Use the following command to start it:
+
+```bash
+npm run mock-server
+```
+
+For debugging the mock server, use:
+
+```bash
+npm run mock-server:debug
+```
+
+---
+
+### How to Start the Application with the Mock Server
+
+To start the Angular application with the mock server configuration, use:
+
+```bash
+npm run mockstart
+```
+
+---
+
+### How to Run Functional Tests
+
+To run the functional tests in **Chromium** (headed mode), use:
+
+```bash
+npm run test:functional-chromium
+```
+
+This will execute all tests in the `e2e/tests/functional/` folder.
+
+---
+
+### Additional Commands
+
+- **Run all E2E tests**:
+  ```bash
+  npm run test:e2e
+  ```
+- **Run business tests**:
+  ```bash
+  npm run test:business
+  ```
+
+---
+
+### Folder Structure
+
+- `e2e/tests/functional/`: Contains functional tests with mocked or stubbed data.
+- `e2e/tests/business/`: Contains tests for real environments.
+- `mountebank/`: Contains mock server configurations and data.
+
+<br />
+
 [![Brought to you by Thinkster](https://raw.githubusercontent.com/gothinkster/realworld/master/media/end.png)](https://thinkster.io)
