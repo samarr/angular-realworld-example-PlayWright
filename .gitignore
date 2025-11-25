@@ -56,3 +56,5 @@ e2e/tests/test-plan.md
 e2e/seed.spec.ts
 
 playwright-report/*.*
+test-results/*.*
+.playwright-mcp/*.*
