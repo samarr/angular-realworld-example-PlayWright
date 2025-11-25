@@ -1,0 +1,28 @@
+{
+  "comments": [
+    {
+      "id": "3",
+      "createdAt": "2025-11-25T11:44:37.717Z",
+      "updatedAt": "2025-11-25T11:44:37.717Z",
+      "body": "useEffect dependencies caught me so many times when I was learning React. Wish I had read this earlier!",
+      "author": {
+        "username": "johndoe",
+        "bio": "Full-stack developer passionate about clean code and innovative solutions. Love working with modern web technologies.",
+        "image": "https://raw.githubusercontent.com/gothinkster/node-express-realworld-example-app/refs/heads/master/src/assets/images/smiley-cyrus.jpeg",
+        "following": false
+      }
+    },
+    {
+      "id": "4",
+      "createdAt": "2025-11-25T11:44:37.717Z",
+      "updatedAt": "2025-11-25T11:44:37.717Z",
+      "body": "Custom hooks are a game-changer. They make components so much cleaner and more reusable.",
+      "author": {
+        "username": "sarahchen",
+        "bio": "Data scientist and machine learning engineer. Passionate about turning data into actionable insights.",
+        "image": "https://raw.githubusercontent.com/gothinkster/node-express-realworld-example-app/refs/heads/master/src/assets/images/smiley-cyrus.jpeg",
+        "following": false
+      }
+    }
+  ]
+}

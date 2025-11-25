@@ -61,6 +61,50 @@ The example application is a social blogging site (i.e. a Medium.com clone) call
 
 <br />
 
+## Unit Testing with Jasmine & Karma
+
+### Overview
+
+We use **Jasmine** as the testing framework and **Karma** as the test runner for unit tests. Unit tests are co-located with their source files (e.g., `component.spec.ts` next to `component.ts`).
+
+---
+
+### How to Run Unit Tests
+
+To run all unit tests:
+
+```bash
+npm test
+```
+
+This will:
+
+- Launch Karma test runner
+- Execute all `*.spec.ts` files
+- Generate code coverage reports in the `coverage/` folder
+- Run tests in ChromeHeadless browser
+
+---
+
+### Test Coverage
+
+Unit tests are organized by feature:
+
+- **Components**: Test component initialization, user interactions, and state changes
+- **Services**: Test API calls, data transformations, and business logic
+- **Guards**: Test authentication and authorization logic
+- **Pipes**: Test data formatting and transformations
+
+---
+
+### Example Test Files
+
+- `src/app/features/article/pages/article/article.component.spec.ts`: Tests for ArticleComponent including article loading, favorites, follows, and comments
+
+---
+
+<br />
+
 ## End-to-End Testing with Playwright
 
 ### Overview

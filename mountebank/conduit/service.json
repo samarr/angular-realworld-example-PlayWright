@@ -29,6 +29,94 @@
     {
       "predicates": [
         {
+          "equals": {
+            "method": "GET",
+            "path": "/api/articles/how-to-learn-javascript-efficiently"
+          }
+        }
+      ],
+      "responses": [
+        {
+          "is": {
+            "headers": {
+              "content-type": "application/json",
+              "access-control-allow-origin": "*"
+            },
+            "statusCode": 200,
+            "body": "<%- stringify(filename, './conduit/article-how-to-learn-javascript-efficiently.json') %>"
+          }
+        }
+      ]
+    },
+    {
+      "predicates": [
+        {
+          "equals": {
+            "method": "GET",
+            "path": "/api/articles/how-to-learn-javascript-efficiently/comments"
+          }
+        }
+      ],
+      "responses": [
+        {
+          "is": {
+            "headers": {
+              "content-type": "application/json",
+              "access-control-allow-origin": "*"
+            },
+            "statusCode": 200,
+            "body": "<%- stringify(filename, './conduit/comments-how-to-learn-javascript-efficiently.json') %>"
+          }
+        }
+      ]
+    },
+    {
+      "predicates": [
+        {
+          "equals": {
+            "method": "GET",
+            "path": "/api/articles/react-hooks-best-practices"
+          }
+        }
+      ],
+      "responses": [
+        {
+          "is": {
+            "headers": {
+              "content-type": "application/json",
+              "access-control-allow-origin": "*"
+            },
+            "statusCode": 200,
+            "body": "<%- stringify(filename, './conduit/article-react-hooks-best-practices.json') %>"
+          }
+        }
+      ]
+    },
+    {
+      "predicates": [
+        {
+          "equals": {
+            "method": "GET",
+            "path": "/api/articles/react-hooks-best-practices/comments"
+          }
+        }
+      ],
+      "responses": [
+        {
+          "is": {
+            "headers": {
+              "content-type": "application/json",
+              "access-control-allow-origin": "*"
+            },
+            "statusCode": 200,
+            "body": "<%- stringify(filename, './conduit/comments-react-hooks-best-practices.json') %>"
+          }
+        }
+      ]
+    },
+    {
+      "predicates": [
+        {
           "contains": {
             "method": "GET",
             "path": "/api/articles"

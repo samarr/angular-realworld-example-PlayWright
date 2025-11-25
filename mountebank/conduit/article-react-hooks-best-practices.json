@@ -1,0 +1,19 @@
+{
+  "article": {
+    "slug": "react-hooks-best-practices",
+    "title": "React Hooks: Best Practices and Common Pitfalls",
+    "description": "Essential patterns and anti-patterns when working with React Hooks",
+    "body": "React Hooks have revolutionized how we write React components, but they come with their own set of best practices and potential pitfalls.\n\n## useEffect Dependencies\n\nOne of the most common mistakes is forgetting to include dependencies in the useEffect array. This can lead to stale closures and unexpected behavior.\n\n## Custom Hooks for Reusability\n\nCreate custom hooks to encapsulate stateful logic that can be shared across components. This promotes code reuse and maintainability.\n\n## Performance Considerations\n\nUse useMemo and useCallback judiciously. Don't optimize prematurely, but be aware of when these hooks can help prevent unnecessary re-renders.",
+    "tagList": ["frontend", "hooks", "javascript", "react"],
+    "createdAt": "2025-11-25T11:44:32.395Z",
+    "updatedAt": "2025-11-25T11:44:32.395Z",
+    "favorited": false,
+    "favoritesCount": 2,
+    "author": {
+      "username": "janesmith",
+      "bio": "Frontend developer with a keen eye for UI/UX design. Specializing in React and modern CSS frameworks.",
+      "image": "https://raw.githubusercontent.com/gothinkster/node-express-realworld-example-app/refs/heads/master/src/assets/images/smiley-cyrus.jpeg",
+      "following": false
+    }
+  }
+}
