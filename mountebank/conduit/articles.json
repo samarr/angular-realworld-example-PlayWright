@@ -1,38 +1,38 @@
 {
   "articles": [
     {
-      "title": "dummy-1",
-      "slug": "dummy-1",
-      "body": "dummy-1",
-      "createdAt": "2019-09-02T09:12:45.536Z",
-      "updatedAt": "2019-09-02T09:12:45.536Z",
-      "tagList": ["test", "test"],
-      "description": "dummy-1",
-      "author": {
-        "username": "dummy-1",
-        "bio": null,
-        "image": "https://www.imagesdoc.com/wp-content/uploads/sites/33/2018/10/Fotolia_53407720_Subscription_XL.jpg",
-        "following": false
-      },
+      "slug": "how-to-learn-javascript-efficiently",
+      "title": "How to Learn JavaScript Efficiently",
+      "description": "A comprehensive guide to mastering JavaScript from beginner to advanced level",
+      "body": "Learning JavaScript can be overwhelming with so many resources available. Here's a structured approach that has helped thousands of developers master this essential language.\n\n## Start with the Fundamentals\n\nBefore diving into frameworks, master the core concepts: variables, functions, objects, and arrays. Understanding these building blocks is crucial for writing clean, maintainable code.\n\n## Practice with Real Projects\n\nThe best way to learn is by building actual applications. Start with simple projects like a todo list or calculator, then gradually increase complexity.\n\n## Join the Community\n\nEngage with other developers through forums, Discord servers, and local meetups. The JavaScript community is incredibly welcoming and helpful.",
+      "tagList": ["beginners", "javascript", "programming", "webdev"],
+      "createdAt": "2025-11-25T11:11:54.556Z",
+      "updatedAt": "2025-11-25T11:11:54.556Z",
       "favorited": false,
-      "favoritesCount": 0
+      "favoritesCount": 2,
+      "author": {
+        "username": "johndoe",
+        "bio": "Full-stack developer passionate about clean code and innovative solutions. Love working with modern web technologies.",
+        "image": "https://raw.githubusercontent.com/gothinkster/node-express-realworld-example-app/refs/heads/master/src/assets/images/smiley-cyrus.jpeg",
+        "following": false
+      }
     },
     {
-      "title": "dummy-2",
-      "slug": "dummy-2",
-      "body": "dummy-2",
-      "createdAt": "2019-09-02T05:20:08.545Z",
-      "updatedAt": "2019-09-02T05:20:08.545Z",
-      "tagList": [],
-      "description": "dummy-2",
-      "author": {
-        "username": "dummy-2",
-        "bio": null,
-        "image": "https://static.productionready.io/images/smiley-cyrus.jpg",
-        "following": false
-      },
+      "slug": "react-hooks-best-practices",
+      "title": "React Hooks: Best Practices and Common Pitfalls",
+      "description": "Essential patterns and anti-patterns when working with React Hooks",
+      "body": "React Hooks have revolutionized how we write React components, but they come with their own set of best practices and potential pitfalls.\n\n## useEffect Dependencies\n\nOne of the most common mistakes is forgetting to include dependencies in the useEffect array. This can lead to stale closures and unexpected behavior.\n\n## Custom Hooks for Reusability\n\nCreate custom hooks to encapsulate stateful logic that can be shared across components. This promotes code reuse and maintainability.\n\n## Performance Considerations\n\nUse useMemo and useCallback judiciously. Don't optimize prematurely, but be aware of when these hooks can help prevent unnecessary re-renders.",
+      "tagList": ["frontend", "hooks", "javascript", "react"],
+      "createdAt": "2025-11-25T11:11:54.556Z",
+      "updatedAt": "2025-11-25T11:11:54.556Z",
       "favorited": false,
-      "favoritesCount": 2
+      "favoritesCount": 2,
+      "author": {
+        "username": "janesmith",
+        "bio": "Frontend developer with a keen eye for UI/UX design. Specializing in React and modern CSS frameworks.",
+        "image": "https://raw.githubusercontent.com/gothinkster/node-express-realworld-example-app/refs/heads/master/src/assets/images/smiley-cyrus.jpeg",
+        "following": false
+      }
     }
   ],
   "articlesCount": 10

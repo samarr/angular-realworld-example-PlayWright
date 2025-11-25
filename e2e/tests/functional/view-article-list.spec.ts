@@ -8,15 +8,15 @@ test.describe("Article Management", () => {
     // Navigate to home page
     await feedPage.navigateToFeeds();
 
-    // Verify article content
+    // Verify article content - Using real article data
     await feedPage.verifyArticleDisplay(
-      "dummy-1",
-      "dummy-1",
-      "September 2, 2019",
+      "How to Learn JavaScript Efficiently",
+      "A comprehensive guide to mastering JavaScript from beginner to advanced level",
+      "November 25, 2025",
     );
 
-    // Verify article components
-    await feedPage.verifyArticleComponents("dummy-1", "0", "test");
+    // Verify article components - Using real article data with 2 favorites, author "johndoe", and "beginners" tag
+    await feedPage.verifyArticleComponents("johndoe", "2", "beginners");
 
     // Verify feed tabs functionality and switching between feeds
     await feedPage.verifyFeedTabs();
@@ -74,7 +74,15 @@ test.describe("Article Management", () => {
     page,
   }) => {
     const feedPage = new FeedPage(page);
-    const expectedTags = ["mock", "mountebank", "fast", "testing"];
+    const expectedTags = [
+      "beginners",
+      "javascript",
+      "programming",
+      "webdev",
+      "frontend",
+      "hooks",
+      "react",
+    ];
 
     // Navigate to home page
     await feedPage.navigateToFeeds();
