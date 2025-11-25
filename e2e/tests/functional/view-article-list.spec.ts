@@ -8,10 +8,6 @@ test.describe("Article Management", () => {
     // Navigate to home page
     await feedPage.navigateToFeeds();
 
-    // Wait a moment for content to load
-    // await feedPage.waitForTimeout(1000);
-    // await page.getByRole('link', { name: 'dummy-1', exact: true }).click();
-
     // Verify article content
     await feedPage.verifyArticleDisplay(
       "dummy-1",
@@ -72,5 +68,21 @@ test.describe("Article Management", () => {
 
     // Clean up intercept
     await feedPage.removeIntercept("**/api/articles**");
+  });
+
+  test("Verify Popular Tags are visible and match mock data", async ({
+    page,
+  }) => {
+    const feedPage = new FeedPage(page);
+    const expectedTags = ["mock", "mountebank", "fast", "testing"];
+
+    // Navigate to home page
+    await feedPage.navigateToFeeds();
+
+    // Verify Popular Tags header is visible
+    await feedPage.verifyPopularTagsHeaderVisible();
+
+    // Verify tags match mock data
+    await feedPage.verifyTagsMatch(expectedTags);
   });
 });

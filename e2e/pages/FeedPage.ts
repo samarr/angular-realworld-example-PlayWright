@@ -31,6 +31,10 @@ export class FeedPage extends BasePage {
   private readonly articleTitleLocator = this.page.locator(
     ".article-preview h1",
   );
+  private readonly popularTagsHeader = this.page.locator("text=Popular Tags");
+  private readonly tagElements = this.page.locator(
+    ".tag-list > a.tag-default.tag-pill",
+  );
 
   constructor(page: Page) {
     super(page);
@@ -125,6 +129,56 @@ export class FeedPage extends BasePage {
 
   async clickTag(tag: string) {
     await this.tagItem(tag).click();
+  }
+
+  // Popular Tags Methods
+  /**
+   * Verify that the Popular Tags section header is visible
+   */
+  async verifyPopularTagsHeaderVisible(): Promise<void> {
+    await expect(this.popularTagsHeader).toBeVisible();
+  }
+
+  /**
+   * Get all popular tags currently displayed on the page
+   * @returns Array of trimmed tag names
+   */
+  async getPopularTags(): Promise<string[]> {
+    const allTagsText = await this.tagElements.allTextContents();
+    return allTagsText.map((tag) => tag.trim());
+  }
+
+  /**
+   * Verify that all visible tags match the expected tags
+   * @param expectedTags - Array of expected tag names
+   */
+  async verifyTagsMatch(expectedTags: string[]): Promise<void> {
+    // Verify we have the expected number of tags
+    const tagCount = await this.tagElements.count();
+    expect(tagCount).toBe(expectedTags.length);
+
+    // Get all visible tags
+    const visibleTags = await this.getPopularTags();
+
+    // Verify each expected tag is present
+    for (const expectedTag of expectedTags) {
+      expect(visibleTags).toContain(expectedTag);
+    }
+
+    // Verify all visible tags match the expected tags exactly (order-independent)
+    expect(visibleTags.sort()).toEqual(expectedTags.sort());
+  }
+
+  /**
+   * Click on a specific popular tag
+   * @param tagName - Name of the tag to click
+   */
+  async clickPopularTag(tagName: string): Promise<void> {
+    const tag = this.page.locator(
+      `.tag-list > a.tag-default.tag-pill:has-text("${tagName}")`,
+    );
+    await expect(tag).toBeVisible();
+    await tag.click();
   }
 
   // Pagination Methods
